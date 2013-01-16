@@ -1,4 +1,4 @@
 noodle-crawler
 ==============
 
-Noodle NG Crawler Component
+Noodle NG Crawler
