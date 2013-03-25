@@ -1,4 +1,4 @@
-noodle-crawler
+noodle.crawler
 ==============
 
 Noodle NG Crawler
