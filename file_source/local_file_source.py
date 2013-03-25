@@ -1,12 +1,12 @@
-from abstract_file_source import abstract_file_source 
+from abstract_file_source import AbstractFileSource 
 import os
 
-class local_file_source(abstract_file_source):
+class LocalFileSource(AbstractFileSource):
 
-    def __init__(self, destination):
+    def __init__(self, root):
         """init file source with root node destination"""
         
-        self.root = destination
+        self.root = root
 
     def list_content(self, basedir=None):
         """list content in basedir"""
@@ -42,7 +42,7 @@ class local_file_source(abstract_file_source):
         
 if __name__ == '__main__':
     
-    share = local_file_source("/home")
+    share = LocalFileSource("/home")
     print share.list_content("/tmp")
     print share.walk_content("/tmp")
 
