@@ -14,7 +14,7 @@ setup(
     long_description=open('README.md').read(),
     install_requires=[
         'noodle.core',
-        ],
+    ],
     packages=find_packages(exclude=['tests']),
     namespace_packages=['noodle'],
 )
